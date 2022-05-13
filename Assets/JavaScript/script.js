@@ -14,14 +14,23 @@ function writePassword() {
         else if (passwordLength !== Number) {
         alert("Please enter a valid whole number between 8-128")
         }
+//Asks if you would like special characters included in your new password        
     let spChar ;
-      if (confirm("Would you like to use special characters?")){
+      if (confirm("Would you like to use special characters?")) {
         spChar = ["`~!@#$%^&*()-_=+[]{}|/?.>,<*';:"]
       }
         else {
           spChar = false
         }
-    console.log(spChar)    
+    console.log(spChar)
+    let capLtrs ;
+        if (confirm("would you like to use Capital Letters?")) {
+          capLtrs = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
+        }
+          else {
+            capLtrs = false
+          }
+    console.log(capLtrs)
   }
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
