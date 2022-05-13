@@ -14,6 +14,14 @@ function writePassword() {
         else if (passwordLength !== Number) {
         alert("Please enter a valid whole number between 8-128")
         }
+    let spChar ;
+      if (confirm("Would you like to use special characters?")){
+        spChar = ["`~!@#$%^&*()-_=+[]{}|/?.>,<*';:"]
+      }
+        else {
+          spChar = false
+        }
+    console.log(spChar)    
   }
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
