@@ -5,7 +5,8 @@
  ### Description
  The script contains prompts that allow the user to decide if they want to include different parameters including upper case letters, lower case letters, special characters, and numbers. Once the user decides which parameters they would like included in their password the script generates a truly randomized password with the values provided. 
 
- ### How It Looks
+ ### How It Looks and Where to Find it
+ https://github.com/jmonty94/portfolio
 #### When the page loads
 ![screenshot](/Assets/images/FirstLoad.PNG)
 
